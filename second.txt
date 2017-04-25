@@ -1,0 +1,4 @@
+SELECT labs.name
+FROM labs
+INNER JOIN groups as grp ON grp.lab_id = labs.id;
+INNER JOIN teachers ON grp.teacher_id = teachers.id;

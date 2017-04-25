@@ -1,0 +1,5 @@
+SELECT courses.name 
+FROM courses as crs
+INNER JOIN groups as grp ON grp.course_id = crs.id;
+INNER JOIN seances as snc ON group.seance_id = snc.id;
+

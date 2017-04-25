@@ -1,0 +1,5 @@
+SELECT payments.value 
+FROM payments as pyt
+INNER JOIN studies as sty ON pyt.study_id = sty.id;
+INNER JOIN groups as grp ON sty.group_id = grp.id;
+INNER JOIN courses as crs ON grp.course_id = crs.id;
